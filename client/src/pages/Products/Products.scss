@@ -1,0 +1,40 @@
+.products {
+    display: flex;
+    padding: 30px 50px;
+
+    .left {
+        flex: 1;
+        position: sticky;       // to stick the category to its position
+        height: 100px;
+        top: 50px;              // after 50px bottom from top, it will remain sticky
+
+        .filterItem {
+            margin-bottom: 30px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+            .inputItem {
+                margin-bottom: 10px;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+            
+        }
+    }
+
+    .right {
+        flex: 3;
+
+        .catImg {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
